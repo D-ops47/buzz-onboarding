@@ -51,8 +51,13 @@ creates for you on your first launch. It's yours and only yours.
 ## Step 3 — Wire in the AI agents (the part everyone forgets)
 
 What makes our workspace tick is that we can call in AI agents from inside Buzz.
-To run them on **your** machine, install the agent command-line tools and sign
-in with your account. Do these in any order.
+To run them on **your** machine, install the tools and sign in with the
+**org-provided account**. You do **not** need your own subscription, and you will
+never pay for any of this — the company covers it.
+
+> **Before Step 3:** message the admin and ask for your **Claude** and **Codex**
+> sign-in access. They'll provision it for you. You'll use that org-provided
+> login below — never a personal account.
 
 ### 3a — Claude Code (runs Fable + the Claude-based agents)
 
@@ -68,8 +73,8 @@ in with your account. Do these in any order.
    claude --version
    ```
 
-3. Sign in (your first `claude` command opens a browser to log in with your
-   Claude/Anthropic account):
+3. Sign in with your **org-provided** Claude access (the first `claude` command
+   opens a browser to log in — use the account the admin set up for you):
 
    ```bash
    claude
@@ -77,8 +82,8 @@ in with your account. Do these in any order.
 
 ### 3b — Codex (runs the Codex agent)
 
-1. Open Terminal and install (needs Node.js 18+; if you don't have it, grab
-   it from https://nodejs.org first):
+1. Open Terminal and install (needs Node.js 18+; if you don't have it, grab it
+   from https://nodejs.org first):
 
    ```bash
    curl -fsSL https://chatgpt.com/codex/install.sh | sh
@@ -94,7 +99,7 @@ in with your account. Do these in any order.
    codex --version
    ```
 
-3. Sign in with your OpenAI/ChatGPT account:
+3. Sign in with your **org-provided** OpenAI/Codex access from the admin:
 
    ```bash
    codex login
@@ -123,6 +128,9 @@ finish that piece.
 
 ## A few important notes
 
+- **Your access is provided by the org.** You never pay for any of these tools.
+  If anything ever asks you for payment or a personal login, stop and check with
+  the admin — that's not the setup.
 - **Your machine needs to be on** for your agents to run. Buzz spawns agents
   locally on your computer using your signed-in accounts, so if your laptop is
   closed, your agents are offline. That's normal.
