@@ -9,6 +9,22 @@ the exact same setup the rest of us have.
 
 ---
 
+## Quick setup — one command (recommended)
+
+Run this and it installs the Buzz app, Claude Code, and Codex for you, then
+prints your next steps:
+
+```
+curl -fsSL https://raw.githubusercontent.com/D-ops47/buzz-onboarding/main/setup.sh | bash
+```
+
+That's the whole install. After it finishes (~2 minutes), continue below at
+**Step 2** (create your identity) and **Step 3** (wire in the agents with your
+org-provided access). If you'd rather install each piece yourself step-by-step,
+the full guide walks you through it.
+
+---
+
 ## Step 1 — Install the Buzz app
 
 Download the desktop app. Choose the build that matches your Mac's chip:
